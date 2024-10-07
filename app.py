@@ -95,10 +95,10 @@ def main():
     st.subheader(f"Ticket Number: {st.session_state.ticket_number}")
 
     with st.form(key='ticket_form'):
-        employee_id = st.text_input("Employee ID (6-digit number)")
-        location = st.text_input("Location (Country)")
-        short_description = st.text_input("Short Description")
-        long_description = st.text_area("Long Description")
+        employee_id = st.text_input("**Employee ID (6-digit number)**")
+        location = st.text_input("**Location (Country)**")
+        short_description = st.text_input("**Short Description**")
+        long_description = st.text_area("**Long Description**")
         submit_button = st.form_submit_button(label="Predict")
 
     if submit_button:
