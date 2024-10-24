@@ -11,6 +11,7 @@ from nltk.corpus import stopwords
 import spacy
 import joblib
 nltk.download('stopwords')
+python -m spacy download en_core_web_sm
 
 less_informative_words = pd.read_csv('final_words_to_remove_updated.csv')['words_to_remove'].tolist()
 
