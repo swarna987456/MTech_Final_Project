@@ -11,7 +11,14 @@ from nltk.corpus import stopwords
 import spacy
 import joblib
 nltk.download('stopwords')
+def ensure_model_downloaded(model_name):
+    try:
+        spacy.load(model_name)
+    except OSError:
+        subprocess.run(["python", "-m", "spacy", "download", model_name])
 
+model_name = "en_core_web_sm"
+ensure_model_downloaded(model_name)
 less_informative_words = pd.read_csv('final_words_to_remove_updated.csv')['words_to_remove'].tolist()
 
 stop_words = set(stopwords.words('english'))
