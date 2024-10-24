@@ -11,7 +11,6 @@ from nltk.corpus import stopwords
 import spacy
 import joblib
 nltk.download('stopwords')
-import spacy_streamlit
 
 models = ["en_core_web_sm"]
 
