@@ -1,7 +1,6 @@
 ﻿GitPython==3.1.31
 google-pasta==0.2.0
 googletrans==4.0.0rc1
-spacy==3.7.6
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
 pyspellchecker
@@ -9,4 +8,5 @@ streamlit==1.34.0
 streamlit-option-menu==0.3.12
 nltk
 scikit-learn
-spacy_streamlit
+spacy>=3.0.0,<4.0.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz#egg=en_core_web_sm
