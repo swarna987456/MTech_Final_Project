@@ -10,6 +10,7 @@ from spellchecker import SpellChecker
 from nltk.corpus import stopwords
 import spacy
 import joblib
+nltk.download('stopwords')
 
 less_informative_words = pd.read_csv('final_words_to_remove_updated.csv')['words_to_remove'].tolist()
 
