@@ -12,8 +12,6 @@ import spacy
 import joblib
 nltk.download('stopwords')
 
-models = ["en_core_web_sm"]
-
 less_informative_words = pd.read_csv('final_words_to_remove_updated.csv')['words_to_remove'].tolist()
 
 stop_words = set(stopwords.words('english'))
