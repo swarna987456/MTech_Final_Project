@@ -28,7 +28,7 @@ model = joblib.load('OVO_LR_model.pkl')
 class TextProcessor:
     def __init__(self):
         self.translator = Translator()
-        self.nlp = spacy_streamlit.load('en_core_web_sm')
+        self.nlp = spacy.load('en_core_web_sm')
 
     def text_cleaning_steps_1(self, short_text, long_text):
         text = short_text + ' ' + long_text
